@@ -14,6 +14,6 @@ $(PDF): $(TEXFILES)
 .PHONY: clean
 
 clean:
-	rm -f *.aux *.log *.toc
+	rm -f *.aux *.log *.toc *.hst *.ver
 	rm -f $(PDF)
 
