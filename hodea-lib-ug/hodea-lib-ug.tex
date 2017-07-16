@@ -1,5 +1,22 @@
 \documentclass[a4paper]{report}
+% \documentclass[a4paper]{scrreprt}
+\usepackage[T1]{fontenc}
+
+% For German text
+% \usepackage[utf8]{inputenc}
+% \usepackage[ngerman]{babel}
+
+\usepackage[english]{babel}
 \usepackage{vhistory}
+
+% Use \Cref at the begin of a sentence, and \cref within a sentence
+% to add references.
+% Note: The order of the \usepackage commands is important!
+\usepackage{varioref}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+
+\pagestyle{headings}
 
 \begin{document}
 
@@ -10,13 +27,15 @@ User Guide}
 
 \maketitle
 
+% We want to also count the title page (not necessary for scrreprt)
+\setcounter{page}{2}
+
 \begin{versionhistory}
   \vhEntry{0.1-pending}{July 10, 2017}{Franz Hollerer}{initial version}
 \end{versionhistory}
 
 \tableofcontents
 \include{introduction}
-
 
 \end{document}
 

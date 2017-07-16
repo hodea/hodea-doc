@@ -4,7 +4,7 @@ TEXFILES = $(wildcard *.tex)
 
 PDF = $(MAINDOC:.tex=.pdf)
 
-DOC_DIR = ../doc
+ROOT_DIR = ../
 
 
 all: $(PDF)
@@ -16,8 +16,8 @@ $(PDF): $(TEXFILES)
 .PHONY: clean release
 
 clean:
-	rm -f *.aux *.log *.toc *.hst *.ver
+	rm -f *.aux *.log *.toc *.hst *.ver *.out
 	rm -f $(PDF)
 
 release: $(PDF)
-	cp $(PDF) $(DOC_DIR)/$(PDF)
+	cp $(PDF) $(ROOT_DIR)/hodea-core-lib/doc/$(PDF)
