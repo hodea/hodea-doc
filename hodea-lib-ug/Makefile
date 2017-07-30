@@ -20,4 +20,4 @@ clean:
 	rm -f $(PDF)
 
 release: $(PDF)
-	cp $(PDF) $(ROOT_DIR)/hodea-core-lib/doc/$(PDF)
+	cp $(PDF) $(ROOT_DIR)/hodea-lib/doc/$(PDF)
