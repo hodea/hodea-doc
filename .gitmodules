@@ -1,3 +1,3 @@
-[submodule "hodea-lib"]
-	path = hodea-lib
+[submodule "hodea-lib/hodea"]
+	path = hodea-lib/hodea
 	url = https://github.com/hodea/hodea-lib.git
